@@ -1,0 +1,147 @@
+﻿{
+    "rules": [
+
+        {
+            "term": "phpinfo.php",
+            "category": "Information Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "composer.json",
+            "category": "Information Disclosure",
+            "tags": [ "PHP", "Composer" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "composer.lock",
+            "category": "Information Disclosure",
+            "tags": [ "PHP", "Composer" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "packages.json",
+            "category": "Information Disclosure",
+            "tags": [ "PHP", "Composer" ],
+            "locations": [ "PathFileName" ]
+        },
+
+        {
+            "term": ".inc",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "PathFileNameExtension", "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".php",
+            "category": "Local Code Execution",
+            "tags": [ "PHP" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".php3",
+            "category": "Local Code Execution",
+            "tags": [ "PHP" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+
+        {
+            "term": "includes",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "PathSegment" ]
+        },
+
+        {
+            "term": "<?php",
+            "category": "Local Code Execution",
+            "tags": [ "PHP" ],
+            "locations": [ "RequestBody", "Query" ]
+        },
+        {
+            "term": "<?=",
+            "category": "Local Code Execution",
+            "tags": [ "PHP" ],
+            "locations": [ "RequestBody", "Query" ]
+        },
+        {
+            "term": "$_GET",
+            "category": "Local Code Execution",
+            "tags": [ "PHP" ],
+            "locations": [ "RequestBody", "Query" ]
+        },
+        {
+            "term": "$_POST",
+            "category": "Local Code Execution",
+            "tags": [ "PHP" ],
+            "locations": [ "RequestBody", "Query" ]
+        },
+
+        {
+            "term": "<?php",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "<?=",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "$_GET",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "$_POST",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "SERVER[\"",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "allow_url_fopen",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "include(",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "include \"",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "include '",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "include_once(",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "require_once(",
+            "category": "Source Code Disclosure",
+            "tags": [ "PHP" ],
+            "locations": [ "ResponseBody" ]
+        }
+    ]
+}

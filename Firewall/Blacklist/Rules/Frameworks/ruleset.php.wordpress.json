@@ -1,0 +1,16 @@
+﻿{
+    "rules": [
+        {
+            "term": "wp-config.php",
+            "category": "Information Disclosure",
+            "tags": [ "PHP", "WordPress" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "wp-config.php",
+            "category": "Local Code Execution",
+            "tags": [ "PHP", "WordPress" ],
+            "locations": [ "RequestFormFileName" ]
+        }
+    ]
+}

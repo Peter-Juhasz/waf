@@ -1,0 +1,55 @@
+﻿# .net
+.pdb
+.obj
+.runtimeconfig.json
+.deps.json
+.nuget.g.props
+.nuget.g.targets
+.nuget.dgspec.json
+.nuget.cache
+.suo
+.user
+.userosscache
+.sln.docstates
+.userprefs
+.props
+.ruleset
+
+# frontpage
+.pwd
+
+# cpp
+.c
+.h
+.cpp
+
+# python
+.py
+
+# certificates
+.cer
+.crt
+.pfx
+
+# windows
+.ps1
+.psm
+
+# logs
+.log
+
+# backups
+.bak
+
+# miscellaneous
+.md
+.db
+.lock
+.cache
+.make
+.key
+.tmp
+.dat
+.ini
+.config
+.orig

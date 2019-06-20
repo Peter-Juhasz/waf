@@ -1,0 +1,16 @@
+﻿{
+    "rules": [
+        {
+            "term": ".ts",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileNameExtension" ],
+            "tags": [ "JavaScript", "TypeScript" ]
+        },
+        {
+            "term": ".tsx",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileNameExtension" ],
+            "tags": [ "JavaScript", "TypeScript", "React" ]
+        }
+    ]
+}

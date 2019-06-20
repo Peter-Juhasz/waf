@@ -1,0 +1,293 @@
+﻿{
+    "rules": [
+        {
+            "term": "X-Scanner",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderName" ]
+        },
+        {
+            "term": "acunetix-product",
+            "category": "Scanner",
+            "tags": [ "Acunetix", "Scanner" ],
+            "locations": [ "RequestHeaderName" ]
+        },
+        {
+            "term": "acunetix-scanning-agreement",
+            "category": "Scanner",
+            "tags": [ "Acunetix", "Scanner" ],
+            "locations": [ "RequestHeaderName" ]
+        },
+        {
+            "term": "acunetix-user-agreement",
+            "category": "Scanner",
+            "tags": [ "Acunetix", "Scanner" ],
+            "locations": [ "RequestHeaderName" ]
+        },
+        {
+            "term": "x-ratproxy-loop",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderName" ]
+        },
+
+        {
+            "term": "acunetix",
+            "category": "Scanner",
+            "tags": [ "Acunetix", "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "hydra",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "advanced email extractor",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "arachni/",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "autogetcontent",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "brutus",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "bsqlbf",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "cgichk",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "cisco-torch",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "commix",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "core-project/1.0",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "crimscanner",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "datacha0s",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "dirbuster",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "domino hunter",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "dotdotpwn",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "email extractor",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "fhscan core 1",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "floodgate",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "F-Secure radar",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "get-minimal",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "gobuster",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "gootkit",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "grabber",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "grendel-scan",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "havij",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "inspath",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "internet ninja",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "jaascois",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "Jorgee",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "masscan",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "metis",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "morfeus fucking scanner",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "mysqloit",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "n-stealth",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "nessus",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "netsparker",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "nikto",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "nmap",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "nsauditor",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "openvas",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "pangolin",
+            "category": "Scanner",
+            "tags": [ "Scanner", "SQL" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        },
+        {
+            "term": "zmeu",
+            "category": "Scanner",
+            "tags": [ "Scanner" ],
+            "locations": [ "RequestHeaderUserAgent" ]
+        }
+    ]
+}

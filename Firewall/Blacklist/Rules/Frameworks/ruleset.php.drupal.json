@@ -1,0 +1,28 @@
+﻿{
+    "rules": [
+        {
+            "term": "settings.php",
+            "category": "Information Disclosure",
+            "tags": [ "PHP", "Drupal" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "default.settings.php",
+            "category": "Information Disclosure",
+            "tags": [ "PHP", "Drupal" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "settings.php",
+            "category": "Local Code Execution",
+            "tags": [ "PHP", "Drupal" ],
+            "locations": [ "RequestFormFileName" ]
+        },
+        {
+            "term": "default.settings.php",
+            "category": "Local Code Execution",
+            "tags": [ "PHP", "Drupal" ],
+            "locations": [ "RequestFormFileName" ]
+        }
+    ]
+}

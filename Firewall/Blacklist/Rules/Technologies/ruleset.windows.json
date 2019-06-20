@@ -1,0 +1,82 @@
+﻿{
+    "rules": [
+        {
+            "term": ".dll",
+            "category": "Source Code Disclosure",
+            "tags": [ "Windows" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".cmd",
+            "category": "Source Code Disclosure",
+            "tags": [ "Windows" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".bat",
+            "category": "Source Code Disclosure",
+            "tags": [ "Windows" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".ps1",
+            "category": "Source Code Disclosure",
+            "tags": [ "Windows" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".sys",
+            "category": "Source Code Disclosure",
+            "tags": [ "Windows" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".dll",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".bat",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".cmd",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".ps1",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".psm",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".vbs",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".exe",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".sys",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        }
+    ]
+}

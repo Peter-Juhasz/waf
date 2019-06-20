@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firewall", "Firewall\Firewall.csproj", "{83A9CC94-DC36-49C9-9C52-AE5BD739EBB0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firewall.Proxy", "Firewall.Proxy\Firewall.Proxy.csproj", "{9359FC95-CC2C-4223-BB34-1FD0CAB4EF0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firewall.Sample", "Firewall.Sample\Firewall.Sample.csproj", "{696E37D9-283D-48D8-9AEF-7E26402BE356}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{979CDC49-FE6D-4DF5-BFE9-D883898A616D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		authoring-rules.md = authoring-rules.md
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firewall.Tests", "Firewall.Tests\Firewall.Tests.csproj", "{2455E82B-DD61-44BB-AFB8-C447DF97EC24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firewall.Benchmark", "Firewall.Benchmark\Firewall.Benchmark.csproj", "{9D72010B-62E6-4A6B-844E-C46504533D37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A9CC94-DC36-49C9-9C52-AE5BD739EBB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A9CC94-DC36-49C9-9C52-AE5BD739EBB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A9CC94-DC36-49C9-9C52-AE5BD739EBB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A9CC94-DC36-49C9-9C52-AE5BD739EBB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9359FC95-CC2C-4223-BB34-1FD0CAB4EF0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9359FC95-CC2C-4223-BB34-1FD0CAB4EF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9359FC95-CC2C-4223-BB34-1FD0CAB4EF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9359FC95-CC2C-4223-BB34-1FD0CAB4EF0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696E37D9-283D-48D8-9AEF-7E26402BE356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696E37D9-283D-48D8-9AEF-7E26402BE356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696E37D9-283D-48D8-9AEF-7E26402BE356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696E37D9-283D-48D8-9AEF-7E26402BE356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2455E82B-DD61-44BB-AFB8-C447DF97EC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2455E82B-DD61-44BB-AFB8-C447DF97EC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2455E82B-DD61-44BB-AFB8-C447DF97EC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2455E82B-DD61-44BB-AFB8-C447DF97EC24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D72010B-62E6-4A6B-844E-C46504533D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D72010B-62E6-4A6B-844E-C46504533D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D72010B-62E6-4A6B-844E-C46504533D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D72010B-62E6-4A6B-844E-C46504533D37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B61E67A-5CFB-4554-AA98-89E9AC506A81}
+	EndGlobalSection
+EndGlobal

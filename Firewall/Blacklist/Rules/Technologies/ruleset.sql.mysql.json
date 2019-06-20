@@ -1,0 +1,16 @@
+﻿{
+    "rules": [
+        {
+            "term": "INSERT INTO ",
+            "category": "Information Disclosure",
+            "tags": [ "SQL", "MySQL" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "-- MySQL dump",
+            "category": "Information Disclosure",
+            "tags": [ "SQL", "MySQL" ],
+            "locations": [ "ResponseBody" ]
+        }
+    ]
+}

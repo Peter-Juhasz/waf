@@ -1,0 +1,52 @@
+﻿{
+    "rules": [
+        {
+            "term": "web.config",
+            "category": "Information Disclosure",
+            "tags": [ "IIS" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "ApplicationInsights.config",
+            "category": "Information Disclosure",
+            "tags": [ "IIS", "Application Insights" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": ".publishsettings",
+            "category": "Information Disclosure",
+            "tags": [ "IIS" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".publishproj",
+            "category": "Information Disclosure",
+            "tags": [ "IIS" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".pubxml",
+            "category": "Information Disclosure",
+            "tags": [ "IIS" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".azurepubxml",
+            "category": "Information Disclosure",
+            "tags": [ "IIS" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".config",
+            "category": "Local Code Execution",
+            "tags": [ "IIS" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": "<title>IIS 10.0 Detailed Error - ",
+            "category": "Information Disclosure",
+            "tags": [ "IIS" ],
+            "locations": [ "ResponseBody" ]
+        }
+    ]
+}

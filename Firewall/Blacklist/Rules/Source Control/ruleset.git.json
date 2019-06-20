@@ -1,0 +1,28 @@
+﻿{
+    "rules": [
+        {
+            "term": ".git",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileName", "PathSegment" ],
+            "tags": [ "Git" ]
+        },
+        {
+            "term": ".gitignore",
+            "category": "Information Disclosure",
+            "tags": [ "Git" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": ".gitattributes",
+            "category": "Information Disclosure",
+            "tags": [ "Git" ],
+            "locations": [ "Path" ]
+        },
+        {
+            "term": ".gitmodules",
+            "category": "Information Disclosure",
+            "tags": [ "Git" ],
+            "locations": [ "PathFileName" ]
+        }
+    ]
+}

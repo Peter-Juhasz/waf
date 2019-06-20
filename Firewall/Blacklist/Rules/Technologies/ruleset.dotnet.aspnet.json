@@ -1,0 +1,46 @@
+﻿{
+    "rules": [
+        {
+            "term": "<asp:",
+            "category": "Local Code Execution",
+            "tags": [ "ASP.NET" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "<%=",
+            "category": "Local Code Execution",
+            "tags": [ "ASP.NET" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "<%:",
+            "category": "Local Code Execution",
+            "tags": [ "ASP.NET" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "<%@",
+            "category": "Local Code Execution",
+            "tags": [ "ASP.NET" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "runat=\"server\"",
+            "category": "Local Code Execution",
+            "tags": [ "ASP.NET" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": ".aspx",
+            "category": "Local Code Execution",
+            "tags": [ ".NET" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".ashx",
+            "category": "Local Code Execution",
+            "tags": [ ".NET" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        }
+    ]
+}

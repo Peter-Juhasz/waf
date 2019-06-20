@@ -1,0 +1,45 @@
+﻿# information
+changelog
+changelog.txt
+readme
+readme.txt
+readme.html
+install.txt
+upgrade.txt
+
+# wordpress
+wp-config.php
+
+# drupal
+settings.php
+
+# frontpage
+vti_pvt
+
+# asp.net
+appsettings.json
+appsettings.development.json
+launchsettings.json
+
+# webpack
+webpack.config.json
+
+# typescript
+tsconfig.json
+
+# es lint
+.eslintignore
+.eslintrc.json
+
+# bower
+.bowerrc
+bower.json
+
+# drush
+.drush-lock-update
+
+# editorconfig
+.editorconfig
+
+# yarn
+yarn.lock

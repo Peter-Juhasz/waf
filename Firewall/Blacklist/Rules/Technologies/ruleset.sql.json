@@ -1,0 +1,10 @@
+﻿{
+    "rules": [
+        {
+            "term": ".sql",
+            "category": "Source Code Disclosure",
+            "tags": [ "SQL" ],
+            "locations": [ "PathFileNameExtension" ]
+        }
+    ]
+}

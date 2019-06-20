@@ -1,0 +1,14 @@
+﻿# front page
+vti_pvt
+
+# visual stdio
+.vs
+.vscode
+obj
+$tf
+
+# backups
+backups
+
+# ws ftp
+WS_FTP

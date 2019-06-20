@@ -1,0 +1,70 @@
+﻿{
+    "rules": [
+        {
+            "term": "nuget.config",
+            "category": "Information Disclosure",
+            "tags": [ ".NET", "NuGet" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": "repositories.config",
+            "category": "Information Disclosure",
+            "tags": [ ".NET", "NuGet" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": ".sln",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET", "Visual Studio" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".csproj",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET", "Visual Studio" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".cs",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".cshtml",
+            "category": "Local Code Execution",
+            "tags": [ ".NET" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        },
+        {
+            "term": ".cshtml",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".razor",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".vb",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".vbhtml",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".vbproj",
+            "category": "Source Code Disclosure",
+            "tags": [ ".NET" ],
+            "locations": [ "PathFileNameExtension" ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+﻿{
+    "rules": [
+        {
+            "term": ".js",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileNameExtension" ],
+            "tags": [ "JavaScript" ]
+        },
+        {
+            "term": ".jsx",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileNameExtension" ],
+            "tags": [ "JavaScript", "React" ]
+        },
+        {
+            "term": ".coffee",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileNameExtension" ],
+            "tags": [ "JavaScript" ]
+        },
+        {
+            "term": "document.cookie",
+            "category": "Session Hijack",
+            "locations": [ "RequestBody", "Path", "Query" ],
+            "tags": [ "JavaScript" ]
+        },
+        {
+            "term": ".env",
+            "category": "Information Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript" ]
+        },
+        {
+            "term": ".env",
+            "category": "Local Code Execution",
+            "locations": [ "RequestFormFileName" ],
+            "tags": [ "JavaScript" ]
+        },
+        {
+            "term": ".bowerrc",
+            "category": "Information Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "Bower" ]
+        },
+        {
+            "term": "bower.json",
+            "category": "Information Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "Bower" ]
+        },
+        {
+            "term": "gruntfile.js",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "Bower" ]
+        },
+        {
+            "term": "webpack.config.js",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "Bower" ]
+        }
+    ]
+}

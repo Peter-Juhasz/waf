@@ -1,0 +1,40 @@
+﻿{
+    "rules": [
+        {
+            "term": "!/usr/bin/",
+            "category": "Source Code Disclosure",
+            "tags": [ "Unix" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "root:",
+            "category": "Information Disclosure",
+            "tags": [ "Unix" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "/etc/passwd",
+            "category": "Information Disclosure",
+            "tags": [ "Unix" ],
+            "locations": [ "RequestBody", "Path", "Query" ]
+        },
+        {
+            "term": "/etc/shadow",
+            "category": "Information Disclosure",
+            "tags": [ "Unix" ],
+            "locations": [ "RequestBody" ]
+        },
+        {
+            "term": ".sh",
+            "category": "Source Code Disclosure",
+            "tags": [ "Unix", "Bash" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".sh",
+            "category": "Local Code Execution",
+            "tags": [ "Windows" ],
+            "locations": [ "RequestFormFileNameExtension" ]
+        }
+    ]
+}

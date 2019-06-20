@@ -1,0 +1,28 @@
+﻿{
+    "rules": [
+        {
+            "term": ".dacpac",
+            "category": "Backup Disclosure",
+            "tags": [ "SQL" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".bacpac",
+            "category": "Backup Disclosure",
+            "tags": [ "SQL" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".mdf",
+            "category": "Backup Disclosure",
+            "tags": [ "SQL" ],
+            "locations": [ "PathFileNameExtension" ]
+        },
+        {
+            "term": ".ldf",
+            "category": "Backup Disclosure",
+            "tags": [ "SQL" ],
+            "locations": [ "PathFileNameExtension" ]
+        }
+    ]
+}

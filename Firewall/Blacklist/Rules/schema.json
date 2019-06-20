@@ -1,0 +1,61 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+        "rules"
+    ],
+    "properties": {
+        "rules": {
+            "$id": "#/properties/rules",
+            "type": "array",
+            "title": "The Rules Schema",
+            "items": {
+                "$id": "#/properties/rules/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                    "term",
+                    "category",
+                    "tags"
+                ],
+                "properties": {
+                    "term": {
+                        "$id": "#/properties/rules/items/properties/term",
+                        "type": "string",
+                        "title": "The Term Schema",
+                        "default": "",
+                        "examples": [
+                            "!/usr/bin/"
+                        ]
+                    },
+                    "category": {
+                        "$id": "#/properties/rules/items/properties/category",
+                        "type": "string",
+                        "title": "The Category Schema",
+                        "default": "",
+                        "examples": [
+                            "Local Code Execution"
+                        ]
+                    },
+                    "tags": {
+                        "$id": "#/properties/rules/items/properties/tags",
+                        "type": "array",
+                        "title": "The Tags Schema",
+                        "items": {
+                            "$id": "#/properties/rules/items/properties/tags/items",
+                            "type": "string",
+                            "title": "The Items Schema",
+                            "default": "",
+                            "examples": [
+                                "Unix"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

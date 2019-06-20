@@ -1,0 +1,40 @@
+﻿{
+    "rules": [
+        {
+            "term": "node_modules",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathSegment" ],
+            "tags": [ "JavaScript", "NPM" ]
+        },
+        {
+            "term": ".npmrc",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileNameExtension" ],
+            "tags": [ "JavaScript", "NPM" ]
+        },
+        {
+            "term": "package.json",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "NPM" ]
+        },
+        {
+            "term": "package-lock.json",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "NPM" ]
+        },
+        {
+            "term": "npm-shrinkwrap.json",
+            "category": "Source Code Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "NPM" ]
+        },
+        {
+            "term": "npm-debug.log",
+            "category": "Information Disclosure",
+            "locations": [ "PathFileName" ],
+            "tags": [ "JavaScript", "NPM" ]
+        }
+    ]
+}

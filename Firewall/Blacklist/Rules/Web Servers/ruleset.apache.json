@@ -1,0 +1,52 @@
+﻿{
+    "rules": [
+        {
+            "term": "<h1>Index of /",
+            "category": "Information Disclosure",
+            "tags": [ "Apache" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": "<address>Apache/",
+            "category": "Information Disclosure",
+            "tags": [ "Apache" ],
+            "locations": [ "ResponseBody" ]
+        },
+        {
+            "term": ".htpasswd",
+            "category": "Information Disclosure",
+            "tags": [ "Apache" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": ".htaccess",
+            "category": "Information Disclosure",
+            "tags": [ "Apache" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": ".htdigest",
+            "category": "Information Disclosure",
+            "tags": [ "Apache" ],
+            "locations": [ "PathFileName" ]
+        },
+        {
+            "term": ".htpasswd",
+            "category": "Authentication Bypass",
+            "tags": [ "Apache" ],
+            "locations": [ "RequestFormFileName" ]
+        },
+        {
+            "term": ".htaccess",
+            "category": "Authentication Bypass",
+            "tags": [ "Apache" ],
+            "locations": [ "RequestFormFileName" ]
+        },
+        {
+            "term": ".htdigest",
+            "category": "Authentication Bypass",
+            "tags": [ "Apache" ],
+            "locations": [ "RequestFormFileName" ]
+        }
+    ]
+}
