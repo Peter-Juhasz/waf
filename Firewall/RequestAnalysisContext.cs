@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Headers;
-using Microsoft.AspNetCore.Routing.Internal;
+using Microsoft.Extensions.Primitives;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -37,17 +37,18 @@ namespace Firewall
             }
         }
 
-        private PathTokenizer? tokenizedPath;
-        public PathTokenizer TokenizedPath
+        private IReadOnlyList<StringSegment>? tokenizedPath;
+        private static readonly char[] PathSeparator = new[] { '/' };
+        public IReadOnlyList<StringSegment> TokenizedPath
         {
             get
             {
                 if (tokenizedPath == null)
                 {
-                    tokenizedPath = new PathTokenizer(Request.Path);
+                    tokenizedPath = new StringTokenizer(Request.Path.Value, PathSeparator).ToList();
                 }
 
-                return tokenizedPath.Value;
+                return tokenizedPath;
             }
         }
 

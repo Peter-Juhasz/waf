@@ -2,14 +2,13 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.ObjectPool;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
+using System;
 using System.Buffers;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -171,15 +170,11 @@ namespace Firewall
                     context.Response.StatusCode = options.DeniedResponseStatusCode;
                 }
 
-                var settings = new JsonSerializerSettings();
-                settings.Converters.Add(new StringEnumConverter());
-                settings.Formatting = Formatting.Indented;
-                settings.ContractResolver = new DefaultContractResolver
-                {
-                    NamingStrategy = new CamelCaseNamingStrategy(),
-                };
-                var dto = new { diagnostics = diagnostics };
-                var json = JsonConvert.SerializeObject(dto, settings);
+                var settings = new JsonSerializerOptions();
+                settings.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+                settings.WriteIndented = true;
+                var dto = new { diagnostics };
+                var json = JsonSerializer.Serialize(dto, settings);
                 context.Response.ContentLength = Encoding.UTF8.GetByteCount(json);
                 context.Response.ContentType = "application/json";
                 await context.Response.WriteAsync(json);

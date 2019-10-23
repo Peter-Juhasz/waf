@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 using System.Threading;
 
 namespace Firewall
@@ -13,7 +13,7 @@ namespace Firewall
         public BlacklistInspector(IOptionsMonitor<FirewallOptions> options)
         {
             AllRules = Directory.GetFiles(".", "ruleset.*.json", SearchOption.AllDirectories)
-                .Select(path => JsonConvert.DeserializeObject<RuleFile>(File.ReadAllText(path)))
+                .Select(path => JsonSerializer.Deserialize<RuleFile>(File.ReadAllText(path)))
                 .SelectMany(f => f.Rules)
                 .OrderBy(l => l.Term)
                 .ToList();
