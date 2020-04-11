@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading;
 
 namespace Firewall
@@ -13,7 +14,7 @@ namespace Firewall
         public BlacklistInspector(IOptionsMonitor<FirewallOptions> options)
         {
             AllRules = Directory.GetFiles(".", "ruleset.*.json", SearchOption.AllDirectories)
-                .Select(path => JsonSerializer.Deserialize<RuleFile>(File.ReadAllText(path)))
+                .Select(path => JsonSerializer.Deserialize<RuleFile>(File.ReadAllText(path), JsonSerializerOptions))
                 .SelectMany(f => f.Rules)
                 .OrderBy(l => l.Term)
                 .ToList();
@@ -21,6 +22,18 @@ namespace Firewall
             Options = options;
             FilterRules(options.CurrentValue);
             _optionsMonitor = options.OnChange(FilterRules);
+        }
+
+        private static readonly JsonSerializerOptions JsonSerializerOptions = new JsonSerializerOptions()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            IgnoreNullValues = true,
+            ReadCommentHandling = JsonCommentHandling.Skip,
+        };
+
+        static BlacklistInspector()
+        {
+            JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
         }
 
         private readonly IDisposable _optionsMonitor;
